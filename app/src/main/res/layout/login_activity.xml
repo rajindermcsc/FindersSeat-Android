@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlt_tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            >
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/indicator" />
+
+            <com.websoftquality.findersseat.views.customize.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_login_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_login"
+                style="@style/proximanova_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/oval_btn_blue"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_login_phone"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/oval_btn_gray_border"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Signup"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <FrameLayout
+                android:id="@+id/google_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_background_google_capsule"
+                android:gravity="center">
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tvGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:text="Google"
+                    android:textColor="@color/white" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,265 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:id="@+id/llt_login_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Sign Up"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center_vertical"
+                    android:text="Signup in your account."
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Profile Pic"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/ic_person"
+                    android:layout_gravity="start">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <Spinner
+                    android:id="@+id/spinner_height"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hair color"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+                <Spinner
+                    android:id="@+id/spinner_hair_color"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_phone_number"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Phone Number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <Spinner
+                    android:id="@+id/spinner_country"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <Spinner
+                    android:id="@+id/spinner_gender"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Birthday"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <com.obs.CustomTextView
+                    android:id="@+id/text_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Enter DOB"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_login_phone"
+                    style="@style/proximanova_regular"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/oval_btn_gray_border"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:padding="15dp"
+                    android:drawableRight="@drawable/arrownextright"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

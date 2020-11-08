@@ -1,0 +1,270 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_image"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back_primary"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <com.obs.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_accent"
+            android:textSize="18dp">
+
+        </com.obs.CustomTextView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/save_button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_save"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:layout_marginRight="5dp">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <include layout="@layout/discovery_setting"/>
+
+            <include layout="@layout/app_settings"
+                android:visibility="gone"/>
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/contact_us"
+                android:textColor="@color/text_very_dark"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_help_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="1dp">
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/help_support"
+                    android:textColor="@color/text_very_dark"
+                    android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_share_igniter"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/share_igniter"
+                        android:textColor="@color/text_very_dark"
+                        android:textSize="17sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_restore_purchase"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/restore_purchase"
+                        android:textColor="@color/text_very_dark"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_legal"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/legal"
+                        android:textColor="@color/igniter_red"
+                        android:textSize="17sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_license"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="About Us"
+                        android:textColor="@color/text_very_dark"
+                        android:textSize="17sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_privacy_policy"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/privacy_policy"
+                        android:textColor="@color/text_very_dark"
+                        android:textSize="17sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_terms_service"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms_service"
+                        android:textColor="@color/text_very_dark"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="1dp">
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_logout"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/logout"
+                    android:textColor="@color/text_very_dark"
+                    android:textSize="16sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/logo_pink" />
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/version"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="1dp">
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_delete_account"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/delete_account"
+                    android:textColor="@color/igniter_red"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/transparent" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

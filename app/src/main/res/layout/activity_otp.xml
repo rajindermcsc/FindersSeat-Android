@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/llt_login_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:text="Password recovery,"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_vertical"
+                android:text="Please enter the verification code that was sent to your E-mail."
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp">
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_otp1"
+                    style="@style/proximanova_regular"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_otp2"
+                    style="@style/proximanova_regular"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_otp3"
+                    style="@style/proximanova_regular"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_otp4"
+                    style="@style/proximanova_regular"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_proceed"
+                style="@style/proximanova_regular"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/oval_btn_gray_border"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:padding="15dp"
+                android:drawableRight="@drawable/arrownextright"
+                android:text="Proceed"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

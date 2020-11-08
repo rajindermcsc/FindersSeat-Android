@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "159970112086",
+    "firebase_url": "https://datingapp-54593.firebaseio.com",
+    "project_id": "datingapp-54593",
+    "storage_bucket": "datingapp-54593.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159970112086:android:da9d64c930969527d8c1f7",
+        "android_client_info": {
+          "package_name": "com.websoftquality.findersseat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159970112086-ialf2req10r656trsj5od6deqoh2ci6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9GLfdNmgl_5L1FLZ1tNv06IlEmTm1p2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159970112086-ialf2req10r656trsj5od6deqoh2ci6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

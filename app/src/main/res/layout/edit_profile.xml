@@ -1,0 +1,839 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_image"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back_primary"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <com.obs.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_accent"
+            android:textSize="18dp">
+
+        </com.obs.CustomTextView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/save_button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_save"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:layout_marginRight="5dp">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.websoftquality.findersseat.views.customize.CustomRecyclerView
+                android:id="@+id/rv_edit_profile_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <include
+                        android:id="@+id/rlt_profile_image_one"
+                        layout="@layout/edit_profile_image_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/rlt_profile_image_two"
+                            layout="@layout/edit_profile_image_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1" />
+
+                        <include
+                            android:id="@+id/rlt_profile_image_three"
+                            layout="@layout/edit_profile_image_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/rlt_profile_image_six"
+                        layout="@layout/edit_profile_image_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/rlt_profile_image_five"
+                        layout="@layout/edit_profile_image_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/rlt_profile_image_four"
+                        layout="@layout/edit_profile_image_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/smart_photos"
+                    android:textColor="@color/igniter_red"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_smart_photos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:checked="true" />
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_smart_photos"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/smart_photos_description"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="12.5sp" />
+            </RelativeLayout>
+
+            <com.obs.CustomTextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Profile Pic"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="90dp"
+                android:layout_height="130dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_person"
+                android:visibility="gone">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+            <Spinner
+                android:id="@+id/spinner_height"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hair color"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+            <Spinner
+                android:id="@+id/spinner_hair_color"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_phone_number"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingBottom="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/quantum_black_hint_text"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="15sp"
+                android:theme="@style/EditTextTheme"
+                android:windowSoftInputMode="stateVisible" />
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+            <Spinner
+                android:id="@+id/spinner_country"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+            <Spinner
+                android:id="@+id/spinner_gender"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Birthday"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+            <com.obs.CustomTextView
+                android:id="@+id/text_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Enter DOB"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Me"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_about_me"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="About you"
+                android:inputType="text"
+                android:paddingBottom="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/quantum_black_hint_text"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="15sp"
+                android:theme="@style/EditTextTheme"
+                android:windowSoftInputMode="stateVisible" />
+
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_location"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Location"
+                android:inputType="text"
+                android:paddingBottom="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/quantum_black_hint_text"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="15sp"
+                android:theme="@style/EditTextTheme"
+                android:windowSoftInputMode="stateVisible" />
+
+
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work status"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_work"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Education Level"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_education_level"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preferred Language"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_language"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ethnicity"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_ethnicity"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Body type"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_body_type"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Character"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_character"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Children"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_children"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_friends"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pets"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_pets"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I live with"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_live"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_car"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Smoke"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_smoke"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drink"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_drink"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+
+            <com.obs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Travel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </com.obs.CustomTextView>
+
+
+            <Spinner
+                android:id="@+id/spinner_travel"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/edit_profile_bg" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

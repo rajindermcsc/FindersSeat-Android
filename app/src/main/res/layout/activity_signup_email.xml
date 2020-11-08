@@ -1,0 +1,511 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/llt_login_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Sign Up"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center_vertical"
+                    android:text="Signup in your account."
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="First Name"
+                    android:textSize="15sp"
+                    android:textColor="@color/black">
+
+                </com.obs.CustomTextView>
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_first_name"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black_text_color"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="Last Name"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/black">
+
+                </com.obs.CustomTextView>
+
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_last_name"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black_text_color"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="User Name"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black">
+
+                </com.obs.CustomTextView>
+
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_user_name"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black_text_color"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="Email"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black">
+
+                </com.obs.CustomTextView>
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_email"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black_text_color"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="When is the sabbath?"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <Spinner
+                    android:id="@+id/spinner_sabbath"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is the state of the Dead ?"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <Spinner
+                    android:id="@+id/spinner_state_death"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How many books in the Bible ?"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_books"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tell books in Bible..."
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name of SDA prophet ?"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_sda"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tell SDA prophet..."
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is the name of the SDA equivalent to Boy Scouts ?"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_sda_equivalent"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tell name of the SDA equivalent to Boy Scouts..."
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is your diet?"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <Spinner
+                    android:id="@+id/spinner_diet"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Which ministry are you into in church"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <Spinner
+                    android:id="@+id/spinner_ministry"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Which Church do you attend ?"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_church"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tell Church you attend..."
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_password"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Password"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+
+                <com.obs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Password"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </com.obs.CustomTextView>
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_confirm_password"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Password"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:paddingBottom="18dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/quantum_black_hint_text"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="15sp"
+                    android:theme="@style/EditTextTheme"
+                    android:windowSoftInputMode="stateVisible" />
+
+
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_login_phone"
+                    style="@style/proximanova_regular"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/oval_btn_gray_border"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:padding="15dp"
+                    android:drawableRight="@drawable/arrownextright"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
